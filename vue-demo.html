@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="vue/lib/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<span :title="msa.length"> span1</span>
+			<span v-bind:title="msa">span2</span>
+			gwetygwyu
+			</div>
+		
+		<script type="text/javascript">
+			const vm=new Vue({
+				el:"#app",
+				data:{
+					msa:"鼠标划入"
+				}
+			})
+		</script>
+	</body>
+</html>
+<!-- 
+tittle鼠标划入事件
+：tittle 等同于 v-bind：tittle
+ -->
